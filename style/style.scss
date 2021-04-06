@@ -30,7 +30,7 @@ nav li {
 body {
   width: 100%;
   max-width: 980px;
-  background: url(/style/img/fond_jaune.png);
+  background: url("/style/img/fond_jaune.png");
   padding: 1em;
   margin: auto;
 }
@@ -39,9 +39,19 @@ P {
   text-align: justify;
 }
 
-header,
-section {
-  background: url(/style/img/separateur.png) repeat-x bottom;
+.separator {
+  width: 150%;
+  margin-left: -6em;
+  height: 1em;
+  background: url("/style/img/separateur.png") repeat-x bottom;
+  top: 1em;
+}
+.shadow {
+  width: 150%;
+  margin-left: -6em;
+  height: 1em;
+  margin-top: -2px;
+  background: url("/style/img/ombre.png") repeat-x bottom;
 }
 
 header {
@@ -49,7 +59,6 @@ header {
   justify-content: space-between;
   padding-bottom: 1em;
   position: relative;
-  background: url(/style/img/separateur.png) repeat-x bottom;
   .logo p {
     font-family: ballpark;
     font-size: 2em;
@@ -77,8 +86,6 @@ nav ul {
   }
 }
 
-// banniere
-
 .banniere {
   margin: 1em 0;
   width: 100%;
@@ -101,16 +108,15 @@ nav ul {
     bottom: 0.1em;
   }
   button {
-    background: rgb(140, 37, 34);
-    background: linear-gradient(
-      0deg,
-      rgba(140, 37, 34, 1) 43%,
-      rgba(255, 178, 178, 1) 100%
-    );
+    background: url("/style/img/fond_degraderouge.png");
     color: white;
     padding: 0.5em 0.8em;
     border-radius: 5px;
     border: none;
+    img {
+      height: 11px;
+      width: 7px;
+    }
   }
 }
 
@@ -157,6 +163,43 @@ section {
     }
     .reseau {
       padding: 0.4em;
+    }
+  }
+}
+
+.section_separator2 {
+  position: relative;
+  img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 33%;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin: 1em 0 1em;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  .list {
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+    justify-content: space-between;
+    font-size: 0.8em;
+    ul {
+      list-style: url("/style/img/ico_liensexterne.png");
+      color: #8c2522;
     }
   }
 }
