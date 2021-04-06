@@ -1,0 +1,26 @@
+@font-face {
+  font-family: ballpark;
+  src: url(/style/polices/ballpark.eot) format("eot"),
+    url(/style/polices/ballpark.svg) format("svg"),
+    url(/style/polices/ballpark.ttf) format("ttf"),
+    url(/style/polices/ballpark.woff) format("woff");
+}
+
+@font-face {
+  font-family: dayrom;
+  src: url(/style/polices/dayrom.eot) format("eot"),
+    url(/style/polices/dayrom.svg) format("svg"),
+    url(/style/polices/dayrom.ttf) format("ttf"),
+    url(/style/polices/dayrom.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: url(/style/img/fond_jaune.png);
+}
