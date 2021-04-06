@@ -22,6 +22,10 @@ nav li {
   font-family: dayrom;
 }
 
+li {
+  cursor: pointer;
+}
+
 body {
   width: 100%;
   max-width: 980px;
@@ -36,16 +40,14 @@ P {
 }
 
 .separator {
-  width: 150%;
-  margin-left: -6em;
+  width: 100%;
   height: 1em;
   background: url("/style/img/separateur.png") repeat-x bottom;
   top: 1em;
 }
 
 .shadow {
-  width: 150%;
-  margin-left: -6em;
+  width: 100%;
   height: 1em;
   margin-top: -2px;
   background: url("/style/img/ombre.png") repeat-x bottom;
@@ -173,6 +175,13 @@ section .title h2 {
 
 section P {
   padding: 1em 1em 1em 0;
+}
+
+section em {
+  color: #8c2522;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: normal;
 }
 
 section aside {
