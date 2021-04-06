@@ -31,7 +31,13 @@ body {
 }
 
 P {
-  font-size: 1em;
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+header,
+section {
+  background: url(/style/img/separateur.png) repeat-x bottom;
 }
 
 header {
@@ -121,5 +127,70 @@ nav ul li:hover {
   padding: 0.5em 0.8em;
   border-radius: 5px;
   border: none;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section article {
+  width: 100%;
+}
+
+section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
+}
+
+section .title h2 {
+  margin-left: 0.6em;
+}
+
+section P {
+  padding: 1em 1em 1em 0;
+}
+
+section aside {
+  background: #6e6963;
+  color: white;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+section aside::before {
+  content: url(/style/img/bulle.png);
+  position: absolute;
+  left: -0.75em;
+  top: 8em;
+}
+
+section aside h3 {
+  font-size: 1em;
+  margin: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+section aside p {
+  padding-left: 1em;
+}
+
+section aside .reseau {
+  padding: 0.4em;
 }
 /*# sourceMappingURL=style.css.map */

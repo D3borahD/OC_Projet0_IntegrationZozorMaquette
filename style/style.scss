@@ -35,7 +35,13 @@ body {
   margin: auto;
 }
 P {
-  font-size: 1em;
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+header,
+section {
+  background: url(/style/img/separateur.png) repeat-x bottom;
 }
 
 header {
@@ -66,7 +72,6 @@ nav ul {
     margin-left: 1em;
     &:hover {
       color: #8c2522;
-      // text-decoration: underline;
       border-bottom: 3px solid #8c2522;
     }
   }
@@ -104,8 +109,54 @@ nav ul {
     );
     color: white;
     padding: 0.5em 0.8em;
-
     border-radius: 5px;
     border: none;
+  }
+}
+
+section {
+  display: flex;
+  article {
+    width: 100%;
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 0.8em;
+    h2 {
+      margin-left: 0.6em;
+    }
+  }
+  P {
+    padding: 1em 1em 1em 0;
+  }
+  aside {
+    background: #6e6963;
+    color: white;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: url(/style/img/bulle.png);
+      position: absolute;
+      left: -0.75em;
+      top: 8em;
+    }
+    h3 {
+      font-size: 1em;
+      margin: 0.5em;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    p {
+      padding-left: 1em;
+    }
+    .reseau {
+      padding: 0.4em;
+    }
   }
 }
