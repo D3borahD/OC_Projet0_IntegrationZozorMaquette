@@ -29,8 +29,13 @@ nav li {
 
 body {
   width: 100%;
+  max-width: 980px;
   background: url(/style/img/fond_jaune.png);
   padding: 1em;
+  margin: auto;
+}
+P {
+  font-size: 1em;
 }
 
 header {
@@ -64,5 +69,43 @@ nav ul {
       // text-decoration: underline;
       border-bottom: 3px solid #8c2522;
     }
+  }
+}
+
+// banniere
+
+.banniere {
+  margin: 1em 0;
+  width: 100%;
+  position: relative;
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .legende {
+    background: rgba($color: black, $alpha: 0.6);
+    padding: 0.5em;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 2.5em;
+    width: 100%;
+    bottom: 0.1em;
+  }
+  button {
+    background: rgb(140, 37, 34);
+    background: linear-gradient(
+      0deg,
+      rgba(140, 37, 34, 1) 43%,
+      rgba(255, 178, 178, 1) 100%
+    );
+    color: white;
+    padding: 0.5em 0.8em;
+
+    border-radius: 5px;
+    border: none;
   }
 }

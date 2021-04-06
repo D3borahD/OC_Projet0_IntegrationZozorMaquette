@@ -24,8 +24,14 @@ nav li {
 
 body {
   width: 100%;
+  max-width: 980px;
   background: url(/style/img/fond_jaune.png);
   padding: 1em;
+  margin: auto;
+}
+
+P {
+  font-size: 1em;
 }
 
 header {
@@ -74,5 +80,46 @@ nav ul li {
 nav ul li:hover {
   color: #8c2522;
   border-bottom: 3px solid #8c2522;
+}
+
+.banniere {
+  margin: 1em 0;
+  width: 100%;
+  position: relative;
+}
+
+.banniere img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.banniere .legende {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5em;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 2.5em;
+  width: 100%;
+  bottom: 0.1em;
+}
+
+.banniere button {
+  background: #8c2522;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(43%, #8c2522), to(#ffb2b2));
+  background: linear-gradient(0deg, #8c2522 43%, #ffb2b2 100%);
+  color: white;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
