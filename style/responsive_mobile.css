@@ -1,0 +1,55 @@
+header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 1em;
+}
+
+.banniere {
+  display: none;
+}
+
+section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+aside {
+  min-width: 100%;
+}
+
+aside #zozor {
+  float: right;
+  margin: 1em;
+}
+
+aside::before {
+  display: none;
+}
+
+aside .reseau {
+  clear: right;
+}
+
+.list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=responsive_mobile.css.map */
